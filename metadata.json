@@ -1,0 +1,6 @@
+{
+  "name": "SMH Tech Private Limited",
+  "description": "Official website and policy portal of SMH Tech Private Limited - Legal, Privacy, Company Information, and Financial Overview.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

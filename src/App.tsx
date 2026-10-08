@@ -10,6 +10,7 @@ import { Footer } from './components/Footer';
 import { LegalPage } from './components/LegalPage';
 import { AboutPage } from './components/AboutPage';
 import { FinancialPage } from './components/FinancialPage';
+import { DeveloperTeamPage } from './components/DeveloperTeamPage';
 import { LegalDocModal } from './components/LegalDocModal';
 import { ContactModal } from './components/ContactModal';
 
@@ -26,6 +27,13 @@ export default function App() {
 
       if (hash === '#about' || path.includes('/about')) {
         setActivePage('about');
+      } else if (
+        hash === '#team' ||
+        hash === '#developer-team' ||
+        path.includes('/team') ||
+        path.includes('/developer-team')
+      ) {
+        setActivePage('team');
       } else if (
         hash === '#financial' ||
         hash === '#financial-information' ||
@@ -76,6 +84,10 @@ export default function App() {
 
         {activePage === 'about' && (
           <AboutPage onOpenContact={() => setContactOpen(true)} />
+        )}
+
+        {activePage === 'team' && (
+          <DeveloperTeamPage />
         )}
 
         {activePage === 'financial' && (

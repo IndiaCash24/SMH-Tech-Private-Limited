@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ActivePage } from '../types';
-import { Menu, X, Shield, Info, DollarSign, Mail, Sparkles } from 'lucide-react';
+import { Menu, X, Shield, Info, DollarSign, Mail, Users } from 'lucide-react';
 
 interface HeaderProps {
   activePage: ActivePage;
@@ -81,6 +81,17 @@ export const Header: React.FC<HeaderProps> = ({
           </button>
 
           <button
+            onClick={() => handleNav('team')}
+            className={`px-3.5 py-2 rounded-lg text-sm font-medium transition-all cursor-pointer ${
+              activePage === 'team'
+                ? 'text-[#3E7D98] font-bold bg-[#3E7D98]/10'
+                : 'text-[#394d55] hover:text-[#253136] hover:bg-gray-100/70'
+            }`}
+          >
+            Developer Team
+          </button>
+
+          <button
             onClick={() => handleNav('financial')}
             className={`px-3.5 py-2 rounded-lg text-sm font-medium transition-all cursor-pointer ${
               activePage === 'financial'
@@ -154,6 +165,18 @@ export const Header: React.FC<HeaderProps> = ({
             >
               <Info className="w-4 h-4 shrink-0" />
               <span>About SMH Tech</span>
+            </button>
+
+            <button
+              onClick={() => handleNav('team')}
+              className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl text-left text-sm font-semibold transition-all cursor-pointer ${
+                activePage === 'team'
+                  ? 'bg-[#3E7D98] text-white shadow-xs'
+                  : 'text-[#394d55] hover:bg-gray-100'
+              }`}
+            >
+              <Users className="w-4 h-4 shrink-0" />
+              <span>Developer Team</span>
             </button>
 
             <button

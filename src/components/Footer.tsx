@@ -22,7 +22,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenContact }) => 
                   className="w-full h-full object-contain"
                   onError={(e) => {
                     const target = e.currentTarget;
-                    target.src = 'https://www.image2url.com/r2/default/images/1791437548072-14738165-2d46-4ff2-bb29-16207b85d14a.png';
+                    target.src = 'https://www.image2url.com/r2/default/images/1791440342593-5c6dfe16-78d8-4faf-ae83-2a983a248802.png';
                   }}
                 />
               </div>

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://smhtechpolicy.netlify.app/sitemap.xml
+Sitemap: https://smhtechprivatelimited.netlify.app/sitemap.xml

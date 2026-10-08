@@ -1,34 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://smhtechpolicy.netlify.app/</loc>
+    <loc>https://smhtechprivatelimited.netlify.app/</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://smhtechpolicy.netlify.app/company_logo.png</image:loc>
+      <image:loc>https://smhtechprivatelimited.netlify.app/company_logo.png</image:loc>
       <image:title>SMH Tech Private Limited Official Logo</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://smhtechpolicy.netlify.app/about</loc>
+    <loc>https://smhtechprivatelimited.netlify.app/about</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://smhtechpolicy.netlify.app/founder.png</image:loc>
-      <image:title>Surendra Murmu - Founder and CEO SMH Tech</image:title>
+      <image:loc>https://smhtechprivatelimited.netlify.app/founder.png</image:loc>
+      <image:title>Surendra Murmu - Founder and CEO SMH Tech Private Limited</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://smhtechpolicy.netlify.app/financial-information</loc>
+    <loc>https://smhtechprivatelimited.netlify.app/financial-information</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://smhtechpolicy.netlify.app/smh-tech-legal-privacy</loc>
+    <loc>https://smhtechprivatelimited.netlify.app/smh-tech-legal-privacy</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>

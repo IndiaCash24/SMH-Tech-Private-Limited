@@ -18,22 +18,32 @@ export default function App() {
   const [activeDoc, setActiveDoc] = useState<LegalDocType>(null);
   const [contactOpen, setContactOpen] = useState(false);
 
-  // Sync hash routing
+  // Sync path and hash routing
   useEffect(() => {
-    const handleHash = () => {
+    const handleRoute = () => {
       const hash = window.location.hash.toLowerCase();
-      if (hash === '#about') {
+      const path = window.location.pathname.toLowerCase();
+
+      if (hash === '#about' || path.includes('/about')) {
         setActivePage('about');
-      } else if (hash === '#financial' || hash === '#financial-information') {
+      } else if (
+        hash === '#financial' ||
+        hash === '#financial-information' ||
+        path.includes('/financial')
+      ) {
         setActivePage('financial');
       } else {
         setActivePage('legal');
       }
     };
 
-    handleHash();
-    window.addEventListener('hashchange', handleHash);
-    return () => window.removeEventListener('hashchange', handleHash);
+    handleRoute();
+    window.addEventListener('hashchange', handleRoute);
+    window.addEventListener('popstate', handleRoute);
+    return () => {
+      window.removeEventListener('hashchange', handleRoute);
+      window.removeEventListener('popstate', handleRoute);
+    };
   }, []);
 
   const handlePageChange = (page: ActivePage) => {

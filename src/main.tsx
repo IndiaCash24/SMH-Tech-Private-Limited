@@ -1,5 +1,10 @@
-import {createRoot} from 'react-dom/client';
-import App from './App.tsx';
-import './index.css';
+const root = document.getElementById('root');
+if (root) {
+  import('react-dom/client').then(({ createRoot }) => {
+    import('./App.tsx').then(({ default: App }) => {
+      createRoot(root).render(<App />);
+    });
+  });
+}
 
-createRoot(document.getElementById('root')!).render(<App />);
+export {};

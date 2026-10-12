@@ -1,3 +1,1 @@
-export type ActivePage = 'legal' | 'about' | 'team' | 'financial';
-
-export type LegalDocType = 'privacy' | 'terms' | 'deletion' | null;
+export type Page = 'home' | 'services' | 'company' | 'team' | 'legal' | 'finance' | 'contact';
